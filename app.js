@@ -6,16 +6,24 @@ alert("Seja bem-vindo(A) ao jogo do número secreto!");
 
 let numeroSecreto = 5;
 let numeroChute;
+let tentativas = 1;
 // Enquanto o númeroChute não for = ao número secreto
 while (numeroChute!=numeroSecreto) {
     numeroChute = prompt("Escolha um número de 1 a 10");
 // Comparando números
 
 if (numeroChute==numeroSecreto) {
-    alert(`Parabéns! Você descobriu o número secreto! (${numeroSecreto})`);
+break;
 } else  if (numeroChute>numeroSecreto){
     alert(`Você errou! o número ${numeroChute} é maior do que o número secreto`);
 } else {
     alert(` Você errou! O número ${numeroChute} é menor do que o número secreto`);
 }
+tentativas++;
+
+}
+if (tentativas>1) {
+    alert(`Parabéns! Você descobriu o número secreto! (${numeroSecreto} com ${tentativas} tentativas)`);
+} else {
+    alert(`Parabéns! Você descobriu o número secreto! (${numeroSecreto} com ${tentativas} tentativa)`);
 }
