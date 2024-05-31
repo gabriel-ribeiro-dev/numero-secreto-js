@@ -1,6 +1,6 @@
 // Mensagem de boas vindas
 
-alert("Seja bem-vindo(A) ao jogo do número secreto!");
+alert("Seja bem-vindo(A) ao jogo do número secreto V1.0 Reboot!");
 
 // Declarando variáveis
 

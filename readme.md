@@ -14,3 +14,7 @@ Espero que goste do projeto.
 ## Licensa
 Este software está sobre a licensa GNU V3.0.
 Para mais informações, acesse o arquivo License
+## Jogue agora.
+Para jogar o jogo do número secreto, versão reboot, 1.0, acesse o link a seguir:
+https://numerosecretoreboot.vercel.app/
+
