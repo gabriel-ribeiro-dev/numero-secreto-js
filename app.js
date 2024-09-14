@@ -15,6 +15,8 @@ console.log (numeroSecreto);
     // Comparando o chute  com o número secreto e exibindo a mensagem de vitória ou derrota na tela
     if (numeroChute==numeroSecreto) {
      alert (`Parabéns! Você descobriu o número secreto! (${numeroSecreto})`);
+    } else if (numeroChute>numeroSecreto) {
+alert (`O número ${numeroChute} é maior do que o número secreto!`);
     } else {
-        alert ('Você errou!');
+        alert (`O número ${numeroChute} é menor do que o número secreto!`);
     }
