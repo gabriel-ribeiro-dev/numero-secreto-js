@@ -3,7 +3,7 @@
     alert ('Seja bem-vindo(A) ao jogo do Número Secreto!');
 
     // Declarando variáveis
-    let numeroSecreto = 5;
+    let numeroSecreto = 4;
 
     // Exibir o número no console
 console.log (numeroSecreto);
@@ -13,8 +13,8 @@ console.log (numeroSecreto);
     let numeroChute = prompt ('Escolha um número entre 1 e 10');
 
     // Comparando o chute  com o número secreto e exibindo a mensagem de vitória ou derrota na tela
-    if (numeroChute===numeroSecreto) {
-     alert ('Parabéns! Você descobriu o número secreto! (5)');
+    if (numeroChute==numeroSecreto) {
+     alert (`Parabéns! Você descobriu o número secreto! (${numeroSecreto})`);
     } else {
         alert ('Você errou!');
     }
