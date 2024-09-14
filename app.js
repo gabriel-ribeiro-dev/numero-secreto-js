@@ -1,0 +1,1 @@
+alert ('Seja bem-vindo(A) ao jogo do Número Secreto!');
