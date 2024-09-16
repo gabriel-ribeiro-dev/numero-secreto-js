@@ -1,8 +1,11 @@
     // Mensagem de boas vindas
     alert ('Seja bem-vindo(A) ao jogo do Número Secreto!');
 
+    // Declarando a variável do número máximo do jogo
+    let numeroMaximo = 100;
+
     // Declarando a variável do número secreto
-    let numeroSecreto = parseInt(Math.random()*100 + 1);
+    let numeroSecreto = parseInt(Math.random()*numeroMaximo + 1);
 
     // Declarando a variável de controlhe de tentativas
     let tentativas = 1;
@@ -10,12 +13,12 @@
     // Obter o chute do usuário com múltplas tentativas
     let numeroChute;
 while (numeroChute!=numeroSecreto) {
-    numeroChute = parseInt (prompt ('Escolha um número entre 1 e 10'));
+    numeroChute = parseInt (prompt (`Escolha um número entre 1 e ${numeroMaximo}`));
 
 // Verificar se o chute é um número de fato
 while (isNaN(numeroChute)) {
     alert ('O que você digitou não é um número');
-    numeroChute = parseInt (prompt ('Escolha um número entre 1 e 10'));
+    numeroChute = parseInt (prompt (`Escolha um número entre 1 e ${numeroMaximo}`));
     
 }
     // Comparando o chute  com o número secreto e exibindo a mensagem de vitória ou derrota na tela
