@@ -1,5 +1,18 @@
-let titulo = document.querySelector('h1');
-titulo.innerHTML= 'Jogo do Número Secreto';
+// Mensagem de boas vindas
+function mensagemDeBoasVindas(tag, texto) {
+    let campo = document.querySelector(tag);
+    campo.innerHTML = texto;
+}
 
-let paragrafo = document.querySelector('p');
-paragrafo.innerHTML = 'Escolha um número de 1 até 10';
+mensagemDeBoasVindas('h1', 'Jogo do número secreto');
+mensagemDeBoasVindas('p', 'Escolha um número entre 1 e 10');
+
+// Gerar número aleatório
+function gerarNumeroAleatorio () {
+    return parseInt (Math.random() *10 +1);
+}
+let numeroSecreto = gerarNumeroAleatorio();
+
+function verificarChute() {
+console.log (numeroSecreto);
+}
