@@ -13,16 +13,22 @@
     }
     let numeroSecreto = gerarNumeroAleatorio();
 
+// Contar tentativas
+let tentativas = 1;
+
     // Verificar chute
     function verificarChute() {
     let chute = document.querySelector ('input').value;
 if (chute==numeroSecreto) {
-exibirTextoNaTela('h1', 'Parabéns!');
-exibirTextoNaTela('p', 'Você descobril o número secreto!');
+let palavraTentativas = tentativas>1 ? 'Tentativas' : 'Tentativa';
+let mensagemTentativas = `Você descobriu o número secreto com ${tentativas} ${palavraTentativas}`;
+    exibirTextoNaTela('h1', 'Parabéns!');
+exibirTextoNaTela('p', mensagemTentativas);
 } else if(chute>numeroSecreto) {
     exibirTextoNaTela('p', 'O número secreto é menor');
 } else {
     exibirTextoNaTela('p', 'O número secreto é maior');
 }
+tentativas++;
 }
                     
