@@ -39,3 +39,13 @@ function LimparCampo () {
     chute = document.querySelector('input');
        chute.value='';
 }
+
+// Reiniciar jogo
+function reiniciarJogo() {
+    numeroSecreto = gerarNumeroAleatorio();
+    LimparCampo();
+    tentativas =1;
+    exibirTextoNaTela('h1', 'Jogo do número secreto');
+    exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
+
+}
