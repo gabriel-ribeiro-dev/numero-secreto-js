@@ -24,6 +24,8 @@ let palavraTentativas = tentativas>1 ? 'Tentativas' : 'Tentativa';
 let mensagemTentativas = `Você descobriu o número secreto com ${tentativas} ${palavraTentativas}`;
     exibirTextoNaTela('h1', 'Parabéns!');
 exibirTextoNaTela('p', mensagemTentativas);
+LimparCampo();
+document.getElementById('reiniciar').removeAttribute('disabled');
 } else if(chute>numeroSecreto) {
     exibirTextoNaTela('p', 'O número secreto é menor');
 } else {
@@ -32,3 +34,8 @@ exibirTextoNaTela('p', mensagemTentativas);
 tentativas++;
 }
                     
+// Limpar campo input
+function LimparCampo () {
+    chute = document.querySelector('input');
+       chute.value='';
+}
